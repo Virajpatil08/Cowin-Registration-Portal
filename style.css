@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    marquee{
+      font-size: 25px;
+      font-weight: 800;
+      font-family: sans-serif;
+   }
+  
+  body{
+    background-image: url(backg\ image.webp);
+    padding: 0 10px;
+  }
+  .wrapper{
+    max-width: 600px;
+    width: 70%;
+    background: rgb(0, 0, 0);
+    margin: 25px auto;
+    box-shadow: 2px 2px 4px rgba(233, 6, 6, 0.125);
+    padding: 50px;
+  }
+  
+  .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #df0a0a;
+    background-color: #9eff02;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1px;
+  }
+  
+  .wrapper .form{
+    width: 100%;
+  }
+  
+  .wrapper .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper .form .inputfield label{
+     width: 200px;
+     color: #f3efef;
+     
+     margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .wrapper .form .inputfield .input,
+  .wrapper .form .inputfield .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper .form .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+  }
+  
+  .wrapper .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrapper .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .wrapper .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 18px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  
+  .wrapper .form .inputfield .input:focus,
+  .wrapper .form .inputfield .textarea:focus,
+  .wrapper .form .inputfield .custom_select select:focus{
+    border: 1px solid #f10606;
+  }
+  
+  .wrapper .form .inputfield p{
+     font-size: 18px;
+     color: #00f5ab;
+  }
+  .wrapper .form .inputfield .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .wrapper .form .inputfield .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    opacity: 0;
+  }
+  .wrapper .form .inputfield .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #44be07;
+    display: block;
+    position: relative;
+  }
+  .wrapper .form .inputfield .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 5px solid;
+    border-color: transparent transparent #fff rgb(255, 255, 255);
+    transform: rotate(-45deg);
+    display: none;
+  }
+  .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #e00404;
+  }
+  
+  .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+  }
+  
+  .wrapper .form .inputfield .btn{
+    width: 100%;
+     padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #181817;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .wrapper .form .inputfield .btn:hover{
+    background: #0ea800;
+  }
+  
+  .wrapper .form .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  
+  @media (max-width:420px) {
+    .wrapper .form .inputfield{ 
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrapper .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }
+  footer{
+        margin-top: 100px;
+        align-self: center;
+        text-align: center;
+        font-size: 20;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(145, 250, 8);
+  
+  }
+  
+  .contact-buttons {
+    display: block;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+  }
+
+  .contact-section {
+    background-color: rgb(252, 207, 6);
+    background-size: cover;
+    height: 175px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } 
+  .contact-buttons {
+    display: block;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+  }
+  .btn-linkedin {
+      background: #0E76A8;
+      border-radius: 10px;
+      color: #fff;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #084461;
+  }
+  .btn-instagram {
+      background: #e64786;
+      border-radius: 10px;
+      color: white; 
+      border-width: 1px;
+      border-style: solid;
+      border-color: #084461;
+  }
+  .btn-github {
+      background-color: #24292e;
+      border-radius: 10px;
+      color: white; 
+      border-width: 1px;
+      border-style: solid;
+      border-color: #084461;
+  }
+  .btn-email {
+      background-color: #141f1f;
+      border-radius: 10px;
+      color: white; 
+      border-width: 1px;
+      border-style: solid;
+      border-color: #084461;
+  }
+  .btn-facebook {
+      background-color: #4267b2;
+      border-radius: 10px;
+      color: white; 
+      border-width: 1px;
+      border-style: solid;
+      border-color: #084461;
+  }
+
+  .btn-twitter {
+    background-color: #4267b2;
+    border-radius: 10px;
+    color: white; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: #084461;
+}
+.stay{
+   padding-top: 50;
+   padding-bottom: 10;
+   text-decoration: rgb(12, 243, 12);
+   text-shadow: brown;
+   font-size: 40;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: rgb(13, 13, 14);
+  background-color: rgb(252, 250, 247);
+}
